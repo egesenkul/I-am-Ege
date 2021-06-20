@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func showDetails(_ sender: Any) {
+        // kullanıcı butona bastığında buradaki kod bloğu çalışacaktır
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
