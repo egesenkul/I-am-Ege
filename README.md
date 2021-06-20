@@ -1,5 +1,8 @@
 # I am Ege
 
+![I am Ege](https://user-images.githubusercontent.com/36307448/122682521-949cbe80-d202-11eb-959c-befdeea0f7d0.gif)
+
+
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 iOS uygulama geliştirmesine hobi olarak başladığım şu günlerde Merhaba Dünya ! tadında yapmış olduğum işlevi az mobil uygulamasına hoş geldiniz ! 
