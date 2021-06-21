@@ -35,4 +35,5 @@ I am Ege uygulamasının her adımına ait bir blog yazısı yazmaya çalıştı
 | AutoLayout Nedir | https://www.teknotra.com/ios-autolayout-nedir-ios-uygulama-gelistirme-8/ |
 | LaunchScreen Kullanımı | https://www.teknotra.com/ios-launchscreen-kullanimi-ios-uygulama-gelistirme-9/ |
 | İkonu Değiştirmek | https://www.teknotra.com/ios-uygulama-ikonu-degistirme-ios-uygulama-gelistirme-10/ |
+| UINavigationController | https://www.teknotra.com/yeni-sayfa-acmak-ios-uygulama-gelistirme-11/ |
 
