@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ay2-r1-tJh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ay2-r1-tJh">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -142,17 +142,32 @@
             </objects>
             <point key="canvasLocation" x="870.76923076923072" y="93.127962085308056"/>
         </scene>
-        <!--View Controller-->
+        <!--School History View Controller-->
         <scene sceneID="00J-6P-eSJ">
             <objects>
-                <viewController id="zbt-Bj-ORO" sceneMemberID="viewController">
+                <viewController id="zbt-Bj-ORO" customClass="SchoolHistoryViewController" customModule="I_am_Ege" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ynK-FO-DBd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-dU-rRd">
+                                <rect key="frame" x="0.0" y="140" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YhA-TG-hDP"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YhA-TG-hDP" firstAttribute="trailing" secondItem="KQV-dU-rRd" secondAttribute="trailing" id="4wc-iv-7Q2"/>
+                            <constraint firstItem="KQV-dU-rRd" firstAttribute="leading" secondItem="YhA-TG-hDP" secondAttribute="leading" id="Je0-bf-D1i"/>
+                            <constraint firstItem="YhA-TG-hDP" firstAttribute="bottom" secondItem="KQV-dU-rRd" secondAttribute="bottom" id="aNr-GP-JL8"/>
+                            <constraint firstItem="KQV-dU-rRd" firstAttribute="top" secondItem="YhA-TG-hDP" secondAttribute="top" id="kbE-iV-irW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bOc-8X-774"/>
+                    <connections>
+                        <outlet property="schoolHistoryTableView" destination="KQV-dU-rRd" id="y0b-pj-8Z1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS7-rJ-yBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,6 +196,9 @@
         <image name="ege" width="579" height="772"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

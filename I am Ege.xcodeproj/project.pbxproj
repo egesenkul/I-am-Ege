@@ -13,6 +13,10 @@
 		AE2A28D5267F2E2D001D14E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2A28D3267F2E2D001D14E6 /* Main.storyboard */; };
 		AE2A28D7267F2E2E001D14E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2A28D6267F2E2E001D14E6 /* Assets.xcassets */; };
 		AE2A28DA267F2E2E001D14E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2A28D8267F2E2E001D14E6 /* LaunchScreen.storyboard */; };
+		AE5348142691A17C00FD7640 /* SchoolHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5348132691A17C00FD7640 /* SchoolHistoryViewController.swift */; };
+		AE5348172691A43E00FD7640 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5348162691A43E00FD7640 /* School.swift */; };
+		AE53481B2691ADA400FD7640 /* SchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5348192691ADA400FD7640 /* SchoolTableViewCell.swift */; };
+		AE53481C2691ADA400FD7640 /* SchoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE53481A2691ADA400FD7640 /* SchoolTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AE2A28D6267F2E2E001D14E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2A28D9267F2E2E001D14E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE2A28DB267F2E2E001D14E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5348132691A17C00FD7640 /* SchoolHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolHistoryViewController.swift; sourceTree = "<group>"; };
+		AE5348162691A43E00FD7640 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		AE5348192691ADA400FD7640 /* SchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewCell.swift; sourceTree = "<group>"; };
+		AE53481A2691ADA400FD7640 /* SchoolTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		AE2A28CC267F2E2D001D14E6 /* I am Ege */ = {
 			isa = PBXGroup;
 			children = (
+				AE5348182691ACD600FD7640 /* Views */,
+				AE5348152691A3FD00FD7640 /* Models */,
 				AE2A28CD267F2E2D001D14E6 /* AppDelegate.swift */,
 				AE2A28CF267F2E2D001D14E6 /* SceneDelegate.swift */,
 				AE2A28D1267F2E2D001D14E6 /* ViewController.swift */,
@@ -63,8 +73,26 @@
 				AE2A28D6267F2E2E001D14E6 /* Assets.xcassets */,
 				AE2A28D8267F2E2E001D14E6 /* LaunchScreen.storyboard */,
 				AE2A28DB267F2E2E001D14E6 /* Info.plist */,
+				AE5348132691A17C00FD7640 /* SchoolHistoryViewController.swift */,
 			);
 			path = "I am Ege";
+			sourceTree = "<group>";
+		};
+		AE5348152691A3FD00FD7640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE5348162691A43E00FD7640 /* School.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE5348182691ACD600FD7640 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE5348192691ADA400FD7640 /* SchoolTableViewCell.swift */,
+				AE53481A2691ADA400FD7640 /* SchoolTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +155,7 @@
 				AE2A28DA267F2E2E001D14E6 /* LaunchScreen.storyboard in Resources */,
 				AE2A28D7267F2E2E001D14E6 /* Assets.xcassets in Resources */,
 				AE2A28D5267F2E2D001D14E6 /* Main.storyboard in Resources */,
+				AE53481C2691ADA400FD7640 /* SchoolTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2A28D2267F2E2D001D14E6 /* ViewController.swift in Sources */,
+				AE53481B2691ADA400FD7640 /* SchoolTableViewCell.swift in Sources */,
 				AE2A28CE267F2E2D001D14E6 /* AppDelegate.swift in Sources */,
 				AE2A28D0267F2E2D001D14E6 /* SceneDelegate.swift in Sources */,
+				AE5348172691A43E00FD7640 /* School.swift in Sources */,
+				AE5348142691A17C00FD7640 /* SchoolHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
