@@ -37,4 +37,5 @@ I am Ege uygulamasının her adımına ait bir blog yazısı yazmaya çalıştı
 | İkonu Değiştirmek | https://www.teknotra.com/ios-uygulama-ikonu-degistirme-ios-uygulama-gelistirme-10/ |
 | UINavigationController | https://www.teknotra.com/yeni-sayfa-acmak-ios-uygulama-gelistirme-11/ |
 | Custom Cell TableView | https://www.teknotra.com/tableview-custom-cell-ios-uygulama-gelistirme-12/ |
+| Pull To Refresh | https://www.teknotra.com/yenilemek-icin-kaydirin-ios-uygulama-gelistirme-13/ |
 

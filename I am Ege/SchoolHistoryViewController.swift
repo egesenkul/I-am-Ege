@@ -20,6 +20,19 @@ class SchoolHistoryViewController: UIViewController,UITableViewDelegate,UITableV
         schoolHistoryTableView.register(nib, forCellReuseIdentifier: "SchoolTableViewCell")
         schoolHistoryTableView.delegate = self
         schoolHistoryTableView.dataSource = self
+        schoolHistoryTableView.refreshControl = UIRefreshControl()
+        schoolHistoryTableView.refreshControl?.addTarget(self,
+                                                         action: #selector(pullToRefresh),
+                                                         for: .valueChanged)
+    }
+    @objc func pullToRefresh(){
+        print("Table refreshed")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            self.schoolHistoryTableView.refreshControl?.endRefreshing()
+        }
+        
+        // You can add your refresh datalist method to here
     }
     
     func FillSchoolInformations(){
